@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-inline: 56px;
+  background-color: #F7F7F7;
+  height: 52px;
+}
+
+.navbar {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 56px;
+  height: 72px;
+}
+.navbar > .navbar__logo {
+  width: 143px;
+  height: 40px;
+}
+.navbar > .navbar__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sticky-side-menu {
+  position: fixed;
+  background-color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  top: 150px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #008FE2;
+}
+
+.page-header__icon-box {
+  display: flex;
+  padding: 8px 22px 8px 21px;
+  gap: 0.2em;
+}
+.page-header__icon-box:nth-of-type(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.page-header__icon-box:nth-of-type(3) {
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.page-header__icon-box .icon-box__img {
+  width: 15px;
+}
+.page-header__icon-box .icon-box__text {
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #95989C;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar > .navbar__nav-list > .nav-list__item .nav-list__link {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+  color: #008FE2;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.navbar > .navbar__nav-list > .nav-list__item .nav-list__link:hover {
+  color: #FFFFFF;
+  background-color: #2D529F;
+}
+
+.sticky-side-menu__item {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.sticky-side-menu__item img {
+  width: 25px;
+}
+.sticky-side-menu__item p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #34383D;
+  margin-top: 5px;
+}
+
+.sticky-side-menu__item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/medical-slide-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-section > * {
+  padding-left: 56px;
+}
+.hero-section__hero-title {
+  color: #FFFFFF;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  font-size: 3.4em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.hero-section__hero-subtitle {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.3em;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.hero-section__hero-description {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */

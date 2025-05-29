@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./sass/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/circle-dot-icon.svg" alt="location">
+            <p class="icon-box__text">
+                1234 Street Name, City Name
+            </p>
+        </div>
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/whatsapp-icon.svg" alt="location">
+            <p class="icon-box__text">
+                123-456-7890
+            </p>
+        </div>
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/email-icon.svg" alt="location">
+            <p class="icon-box__text">
+                mail@domain.com
+            </p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <img class="navbar__logo" src="/assets/logo.png" alt="logo">
+        <ul class="navbar__nav-list">
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Home</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">About Us</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Departments</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Doctors</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Resources</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Insurance</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Elements</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Buy Porto!</a></li>
+
+        </ul>
+    </nav>
+    <div class="sticky-side-menu">
+        <div class="sticky-side-menu__item">
+            <img src="/assets/cart-icon.svg" alt="">
+            <p>Buy Now</p>
+        </div>
+        <div class="sticky-side-menu__item">
+            <img src="/assets/dart-logo.svg" alt="">
+            <p>Prebuilts</p>
+        </div>
+        <div class="sticky-side-menu__item">
+            <img src="/assets/studio-logo.svg" alt="">
+            <p>Studios</p>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <h1 class="hero-section__hero-title">Specialists</h1>
+        <p class="hero-section__hero-subtitle">20 Years Caring About You</p>
+        <p class="hero-section__hero-description">We are located in New York</p>
+    </div>
+    <!-- <a href="#" class="btn btn--primary">Home</a>
+    <a href="#" class="btn btn--secondary">About</a>
+    <a href="#" class="btn btn--dark">Contact</a>
+
+    <div class="sec-title">
+        <p class="sec-title__header">Ezyk yasta</p>
+        <p class="">Ezyk yasta</p>
+    </div>
+
+    <div class="card-icon">
+        <figure class="card-icon__img">
+            <img src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-cardiology.png"
+                alt="">
+        </figure>
+        <figcaption class="card-icon__text">
+            <h3>Cardiology</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloribus expli</p>
+        </figcaption>
+
+    </div> -->
+</body>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    const header = document.querySelector('.page-header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', function() {
+        const currentScrollY = window.scrollY;
+
+        // If scrolling DOWN and past the header, add .fixed
+        if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
+            navbar.classList.add('fixed');
+        } 
+        // If scrolling UP or at the top, remove .fixed
+        else if ( currentScrollY === 0) {
+            navbar.classList.remove('fixed');
+        }
+
+        lastScrollY = currentScrollY; // Update scroll position
+    });
+}); </script>
+</html>

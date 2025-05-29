@@ -1,0 +1,39 @@
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../assets/medical-slide-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  & > * {
+    padding-left: $padding-default;
+  }
+  &__hero-title {
+    color: $white-100;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    font-size: 3.4em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  &__hero-subtitle {
+    color: $white-100;
+    font-weight: 800;
+    font-size: 1.3em;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+  &__hero-description {
+    color: $white-100;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: -0.05em;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+}

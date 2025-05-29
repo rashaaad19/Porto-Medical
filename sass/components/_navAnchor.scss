@@ -1,0 +1,14 @@
+.navbar > .navbar__nav-list > .nav-list__item .nav-list__link {
+    font-family: $body-font;
+    text-decoration: none;
+    background-color: transparent;
+    color: $blue-200;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 10px;
+    
+    &:hover {
+        @include hover-effect($blue-300, $white-100);
+    }
+}

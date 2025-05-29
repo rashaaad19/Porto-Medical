@@ -1,0 +1,28 @@
+.navbar{
+    position: relative;
+    background-color: $white-100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: $padding-default;
+    height: 72px;
+    &> .navbar__logo{
+        width: 143px;
+        height: 40px;
+    }
+    &>.navbar__nav-list{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+
+    }
+}
+
+.navbar.fixed {
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+
