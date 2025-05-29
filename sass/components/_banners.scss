@@ -1,0 +1,90 @@
+.banners {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: $padding-default;
+  position: absolute;
+  bottom: 2px;
+//* Center the banner
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  &__item {
+    width: 235px;
+    height: 94px;
+    padding: 24px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: $white-100;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    img {
+      width: 42px;
+    }
+    h4 {
+      font-size: $fs-h4;
+      font-weight: $fw-h4;
+      color: $white-100;
+      margin-top: 5px;
+      width: fit-content;
+    }
+  }
+  &__item1, &__item3 {
+    background-color: $blue-200;
+  }
+  &__item2 {
+    background-color: $blue-100;
+  }
+  &__item4 {
+    background-color: $blue-300;
+    div{
+        flex-basis: 1;
+        width: fit-content;
+        p{
+            font-size: 12px;
+            color: $gray-50;
+            font-weight: $fw-body;
+        }
+        h4{
+            font-size: $fs-h4;
+        }
+    }
+  }
+  &__item2, &__item3{
+    img{
+        width: 25px;
+    }
+    h4{
+        font-size: $fs-body;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .banners {
+        position: static;
+        // margin-top: 20px;
+        
+        &__item {
+            width: calc(50% - 10px);
+            height: auto;
+            min-height: 80px;
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banners {
+        &__item {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+    
