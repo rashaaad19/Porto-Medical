@@ -15,4 +15,5 @@
 
 .sticky-side-menu__item:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    @include hover-effect($white-200, $black-100);
 }

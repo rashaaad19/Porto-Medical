@@ -31,7 +31,13 @@
     </header>
     <nav class="navbar">
         <img class="navbar__logo" src="/assets/logo.png" alt="logo">
-        <ul class="navbar__nav-list">
+        <div class="navbar__toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar__nav-list" id="navList">
             <li class="nav-list__item"><a href="#" class="nav-list__link">Home</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">About Us</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">Departments</a></li>
@@ -63,6 +69,33 @@
         <p class="hero-section__hero-subtitle">20 Years Caring About You</p>
         <p class="hero-section__hero-description">We are located in New York</p>
     </div>
+
+    <div class="banners">
+        <div class="banners__item banners__item1">
+            <img src="/assets/heart-icon.svg" alt="heart">
+            <h4>Medical Treatment</h4>
+        </div>
+        <div class="banners__item banners__item2">
+            <h4>Doctors Timetable</h4>
+            <img src="/assets/next-icon.svg" alt="next">
+
+        </div>
+        <div class="banners__item banners__item3">
+            <h4>Doctors Timetable</h4>
+            <img src="/assets/next-icon.svg" alt="next">
+
+        </div>
+        <div class="banners__item banners__item4">
+            <img src="/assets/call-icon.svg" alt="call">
+            <div>
+                <p>Emergency Case</p>
+                <h4>
+                    (800)123-4567
+                </h4>
+            </div>
+        </div>
+
+    </div>
     <!-- <a href="#" class="btn btn--primary">Home</a>
     <a href="#" class="btn btn--secondary">About</a>
     <a href="#" class="btn btn--dark">Contact</a>
@@ -89,24 +122,31 @@
 
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('.navbar');
-    const header = document.querySelector('.page-header');
-    let lastScrollY = window.scrollY;
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.navbar');
+        const header = document.querySelector('.page-header');
+        let lastScrollY = window.scrollY;
 
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
+        window.addEventListener('scroll', function () {
+            const currentScrollY = window.scrollY;
 
-        // If scrolling DOWN and past the header, add .fixed
-        if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
-            navbar.classList.add('fixed');
-        } 
-        // If scrolling UP or at the top, remove .fixed
-        else if ( currentScrollY === 0) {
-            navbar.classList.remove('fixed');
-        }
+            // If scrolling DOWN and past the header, add .fixed
+            if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
+                navbar.classList.add('fixed');
+            }
+            // If scrolling UP or at the top, remove .fixed
+            else if (currentScrollY === 0) {
+                navbar.classList.remove('fixed');
+            }
 
-        lastScrollY = currentScrollY; // Update scroll position
+            lastScrollY = currentScrollY; // Update scroll position
+        });
     });
-}); </script>
+    
+    function toggleMenu() {
+    document.getElementById('navList').classList.toggle('active');
+  }
+
+    </script>
+
 </html>

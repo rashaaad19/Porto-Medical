@@ -33,11 +33,41 @@
   display: flex;
   gap: 15px;
 }
+@media (max-width: 1000px) {
+  .navbar > .navbar__nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .navbar > .navbar__nav-list.active {
+    display: flex;
+    z-index: 9999;
+  }
+}
 
-.navbar.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
+.navbar__toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+.navbar__toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #34383D;
+  border-radius: 2px;
+}
+@media (max-width: 1000px) {
+  .navbar__toggle {
+    display: flex;
+  }
 }
 
 .sticky-side-menu {
@@ -111,12 +141,15 @@
 
 .sticky-side-menu__item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #34383D;
+  background-color: #F7F7F7;
 }
 
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/medical-slide-1.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -149,4 +182,86 @@
   letter-spacing: -0.05em;
   text-decoration: underline;
   margin-bottom: 20px;
+}
+
+.banners {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 56px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.banners__item {
+  width: 235px;
+  height: 94px;
+  padding: 24px 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.banners__item img {
+  width: 42px;
+}
+.banners__item h4 {
+  font-size: 17.64px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.banners__item1, .banners__item3 {
+  background-color: #008FE2;
+}
+.banners__item2 {
+  background-color: #3AABDD;
+}
+.banners__item4 {
+  background-color: #2D529F;
+}
+.banners__item4 div {
+  flex-basis: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.banners__item4 div p {
+  font-size: 12px;
+  color: #96A9CF;
+  font-weight: 400;
+}
+.banners__item4 div h4 {
+  font-size: 17.64px;
+}
+.banners__item2 img, .banners__item3 img {
+  width: 25px;
+}
+.banners__item2 h4, .banners__item3 h4 {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  .banners {
+    position: static;
+  }
+  .banners__item {
+    width: calc(50% - 10px);
+    height: auto;
+    min-height: 80px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banners__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
