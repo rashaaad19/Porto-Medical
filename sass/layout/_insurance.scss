@@ -1,0 +1,30 @@
+.insurance{
+    padding-inline: $padding-inline-default;
+    padding-block: $padding-block-default;
+    background-color: $white-100;
+    &__title {
+        @include section-title;
+        margin-bottom: 0.5rem;
+    }
+    &__subtitle {
+        @include section-subtitle;
+        margin-bottom: 1.5rem;
+    }
+    .insurance-cards{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:1000px) {
+    .insurance{
+        .insurance-cards{
+            flex-wrap: wrap;
+
+            .insurance-card{
+                width: 33%;
+            }
+        }
+    }
+}
