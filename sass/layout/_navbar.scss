@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: $padding-default;
+    padding-inline: $padding-inline-default;
     height: 72px;
   
     & > .navbar__logo {
@@ -38,7 +38,7 @@
       
   }
   
-  // Add a menu toggle button for mobile (e.g. hamburger)
+
   .navbar__toggle {
     display: none;
     cursor: pointer;
@@ -58,3 +58,5 @@
     }
   }
   
+
+    

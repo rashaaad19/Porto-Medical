@@ -1,0 +1,22 @@
+.btn {
+  padding: 10px 30px;
+  border-radius: 0;
+  display: inline-block;
+  font-weight: $fw-btn;
+  border-width: 2px;
+  background-color: transparent;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
+    box-shadow 0.15s, transform 0.2s;
+  cursor: pointer;
+  font-size: $fs-btn;
+  text-transform: uppercase;
+}
+.btn-sec {
+  border-color: rgb(36, 36, 36);
+  color: $black-300;
+}
+
+.btn:hover {
+  background-color: transparent;
+  @include hover-effect($black-300, $white-100);
+}

@@ -13,6 +13,9 @@
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/sideMenu";
+@import "layout/about.scss";
+@import "layout/_departments";
+@import "layout/doctors";
 
 //* components
 @import "components/btns";
@@ -20,9 +23,12 @@
 @import "components/cards"; 
 @import "components/iconBox";
 @import "components/navAnchor";
-@import "components/_sideMenuItem";
-@import "components/_hero";
+@import "components/sideMenuItem";
+@import "components/hero";
 @import "components/banners"; 
+@import "components/aboutCard";
+@import "components/departmentCard";
+@import "components/doctorCard";
 
 
 //*pages

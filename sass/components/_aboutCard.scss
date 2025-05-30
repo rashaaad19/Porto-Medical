@@ -1,0 +1,30 @@
+.about-us {
+  width: fit-content;
+
+  &-caption {
+    width: fit-content;
+    &__title {
+      @include section-title;
+    }
+    &__subtitle {
+      @include section-subtitle;
+    }
+    &__description {
+        @include section-description;
+        max-width: 75%;
+        margin-bottom: 44px;
+    }
+  }
+}
+
+
+@media (max-width:750px) {
+    .about-us{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+
+    }
+}

@@ -2,3 +2,25 @@
   color: $color;
   background-color: $bgcolor;
 }
+
+@mixin section-title {
+  font-size: $fs-section-title;
+  font-weight: $fw-section-title;
+  margin-bottom: 0.2rem;
+  width: fit-content;
+}
+@mixin section-subtitle {
+  color: $gray-300;
+  font-size: $fs-section-subtitle;
+  font-weight: $fw-section-subtitle;
+  margin-bottom: 1.125rem;
+  width: fit-content;
+}
+
+@mixin section-description{
+  color: $gray-300;
+  margin-bottom: 1.125rem;
+  font-weight: $fw-body;
+  font-size: $fs-body;
+  line-height: $text-lh;
+}

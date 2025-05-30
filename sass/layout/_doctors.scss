@@ -1,0 +1,29 @@
+.doctors{
+    padding-block: $padding-block-default;
+    padding-inline: $padding-inline-default;
+    &__title{
+        @include section-title;
+        margin-bottom: 0.5rem;    
+    }
+
+    &-caption{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__subtitle{
+            @include section-subtitle;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .btn-ctrl{
+        button{
+            background-color: transparent;
+            border: none;
+            margin-inline: 5px;
+            cursor: pointer;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}

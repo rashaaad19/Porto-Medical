@@ -1,0 +1,30 @@
+.departments {
+  padding-inline: $padding-inline-default;
+  padding-block: $padding-block-default;
+  background-color: $white-200;
+  &__title {
+    @include section-title;
+    margin-bottom: 0.5rem;
+  }
+  &__subtitle {
+    @include section-subtitle;
+    margin-bottom: 1.5rem;
+  }
+  & .btn{
+    margin: 24px auto 24px auto;
+  }
+}
+.departments__cards{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+
+
+@media (max-width:750px) {
+    .departments__cards{
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+}

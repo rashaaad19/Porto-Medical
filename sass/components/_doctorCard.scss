@@ -1,0 +1,52 @@
+.doctors__cards {
+    margin-right: 32px;
+    display: flex;
+    flex-wrap: wrap; 
+  
+    .doctors__card {
+      cursor: pointer;
+      width: 25%;
+      img {
+        width: 100%;
+      }
+  
+      figcaption {
+        display: flex;
+        justify-content: space-around;
+  
+        .doctors__card__text {
+          padding: 24px;
+  
+          p {
+            @include section-description;
+            margin: 0;
+          }
+  
+          h4 {
+            @include section-title;
+            font-size: $fs-section-subtitle;
+          }
+        }
+  
+        button {
+          background-color: transparent;
+          cursor: pointer;
+          border: none;
+  
+          img {
+            width: 30px;
+          }
+        }
+      }
+  
+      // Responsive widths
+      @media (max-width: 992px) {
+        width: calc(50% - 5%); // 2 per row
+      }
+  
+      @media (max-width: 650px) {
+        width: 100%; // 1 per row
+      }
+    }
+  }
+  

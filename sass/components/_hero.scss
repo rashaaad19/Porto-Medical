@@ -11,7 +11,7 @@
   align-items: flex-start;
   justify-content: center;
   & > * {
-    padding-left: $padding-default;
+    padding-left: $padding-inline-default;
   }
   &__hero-title {
     color: $white-100;
