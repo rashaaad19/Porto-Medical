@@ -3,16 +3,381 @@
 
 <head>
     <link rel="stylesheet" href="./sass/main.css">
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>SCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto Medical</title>
 </head>
 
 <body>
-    <h1 class="header"> Hello World</h1>
+    <header class="page-header">
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/circle-dot-icon.svg" alt="location">
+            <p class="icon-box__text">
+                1234 Street Name, City Name
+            </p>
+        </div>
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/whatsapp-icon.svg" alt="location">
+            <p class="icon-box__text">
+                123-456-7890
+            </p>
+        </div>
+        <div class="page-header__icon-box">
+            <img class="icon-box__img" src="/assets/email-icon.svg" alt="location">
+            <p class="icon-box__text">
+                mail@domain.com
+            </p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <img class="navbar__logo" src="/assets/logo.png" alt="logo">
+        <div class="navbar__toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
+        <ul class="navbar__nav-list" id="navList">
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Home</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">About Us</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Departments</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Doctors</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Resources</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Insurance</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Elements</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Buy Porto!</a></li>
+
+        </ul>
+    </nav>
+    <div class="sticky-side-menu">
+        <div class="sticky-side-menu__item">
+            <img src="/assets/cart-icon.svg" alt="">
+            <p>Buy Now</p>
+        </div>
+        <div class="sticky-side-menu__item">
+            <img src="/assets/dart-logo.svg" alt="">
+            <p>Prebuilts</p>
+        </div>
+        <div class="sticky-side-menu__item">
+            <img src="/assets/studio-logo.svg" alt="">
+            <p>Studios</p>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+
+    <div class="hero-section">
+        <h1 class="hero-section__hero-title">Specialists</h1>
+        <p class="hero-section__hero-subtitle">20 Years Caring About You</p>
+        <p class="hero-section__hero-description">We are located in New York</p>
+    </div>
+
+
+
+    <div class="banners">
+        <div class="banners__item banners__item1">
+            <img src="/assets/heart-icon.svg" alt="heart">
+            <h4>Medical Treatment</h4>
+        </div>
+        <div class="banners__item banners__item2">
+            <h4>Doctors Timetable</h4>
+            <img src="/assets/next-icon.svg" alt="next">
+
+        </div>
+        <div class="banners__item banners__item3">
+            <h4>Doctors Timetable</h4>
+            <img src="/assets/next-icon.svg" alt="next">
+
+        </div>
+        <div class="banners__item banners__item4">
+            <img src="/assets/call-icon.svg" alt="call">
+            <div>
+                <p>Emergency Case</p>
+                <h4>
+                    (800)123-4567
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ABOUT US SECTION -->
+
+    <div class="about-us">
+        <div class="about-us-caption">
+            <h2 class="about-us-caption__title">About Us</h2>
+            <p class="about-us-caption__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="about-us-caption__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                hendrerit, leo vitae interdum pretium,
+                tortor risus dapibus tortor, eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor mattis sit
+                amet in diam. Vestibulum non ornare arcu. Class aptent taciti sociosqu ad... </p>
+            <button class="btn btn-sec">Read More</button>
+        </div>
+        <div class="about-us-img">
+            <img src="/assets/about-us.jpg" alt="doctor">
+        </div>
+    </div>
+
+
+    <!-- DEPARTMENTS SECTION -->
+
+    <div class="departments">
+        <h2 class="departments__title">Departments</h2>
+        <p class="departments__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="departments__cards">
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-cardiology.png" alt="Cardiology">
+                <figcaption class="departments-card__caption">
+                    <h4>Cardiology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-gastroenterology.png"
+                    alt="gastroenterology">
+                <figcaption class="departments-card__caption">
+                    <h4>gastroenterology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-pulmonology.png" alt="pulmonology">
+                <figcaption class="departments-card__caption">
+                    <h4>pulmonology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-dental.png" alt="dental">
+                <figcaption class="departments-card__caption">
+                    <h4>dental</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-gynecology.png" alt="gynecology">
+                <figcaption class="departments-card__caption">
+                    <h4>gynecology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="departments-card">
+                <img class="departments-card__img" src="/assets/department-icon-hepatology.png" alt="hepatology">
+                <figcaption class="departments-card__caption">
+                    <h4>hepatology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum…
+                    </p>
+                </figcaption>
+            </figure>
+            <button class="btn btn-sec">View More</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- DOCTORS SECTION -->
+    <div class="doctors">
+        <h2 class="doctors__title">Doctors</h2>
+        <div class="doctors-caption">
+            <p class="doctors-caption__subtitle">Our Specialists</p>
+            <div class="btn-ctrl">
+                <button> <img src="/assets/previous.png"></button>
+                <button> <img src="/assets/next.png"></button>
+            </div>
+        </div>
+        <div class="doctors__cards">
+            <figure class="doctors__card">
+                <img src="/assets/doctor-1.jpg" alt="doctor">
+                <figcaption>
+                    <div class="doctors__card__text">
+                        <p>Cardiology</p>
+                        <h4>John Doe</h4>
+                    </div>
+                    <button> <img src="/assets/next.png"></button>
+
+                </figcaption>
+            </figure>
+            <figure class="doctors__card">
+                <img src="/assets/doctor-2.jpg" alt="doctor">
+                <figcaption>
+                    <div class="doctors__card__text">
+                        <p>Gastroenterology</p>
+                        <h4>Robin Doe</h4>
+                    </div>
+                    <button> <img src="/assets/next.png"></button>
+
+                </figcaption>
+            </figure>
+            <figure class="doctors__card">
+                <img src="/assets/doctor-3.jpg" alt="doctor">
+                <figcaption>
+                    <div class="doctors__card__text">
+                        <p>Pulmonology</p>
+                        <h4>Jessica Doe</h4>
+                    </div>
+                    <button> <img src="/assets/next.png"></button>
+
+                </figcaption>
+            </figure>
+            <figure class="doctors__card">
+                <img src="/assets/doctor-4.jpg" alt="doctor">
+                <figcaption>
+                    <div class="doctors__card__text">
+                        <p>Dental</p>
+                        <h4>Rose Doe</h4>
+                    </div>
+                    <button> <img src="/assets/next.png"></button>
+
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+    <!-- RESOURCES SECTION -->
+
+    <div class="resources">
+        <h2 class="resources__title">Resources</h2>
+        <p class="resources__subtitle">List of our features resources</p>
+
+        <div class="resources-cards">
+            <div class="resources-item">
+                <img src="/assets/resources-1.jpg" alt="resource" class="resources-item__img">
+                <div>
+                    <h4 class="resources-item__header">Prepare for visit</h4>
+                    <p class="resources-item__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                        ipsum, nec sagittis sem nibh</p>
+
+                </div>
+            </div>
+
+            <div class="resources-item">
+                <img src="/assets/resources-2.jpg" alt="resource" class="resources-item__img">
+                <div>
+                    <h4 class="resources-item__header">Prepare for visit</h4>
+                    <p class="resources-item__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                        ipsum, nec sagittis sem nibh</p>
+
+                </div>
+            </div>
+
+
+            <div class="resources-item">
+                <img src="/assets/resources-3.jpg" alt="resource" class="resources-item__img">
+                <div>
+                    <h4 class="resources-item__header">Prepare for visit</h4>
+                    <p class="resources-item__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                        ipsum, nec sagittis sem nibh</p>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-sec">View More</button>
+    </div>
+
+
+    <!-- INSURANCE SECTION -->
+
+    <div class="insurance">
+        <h2 class="insurance__title">Insurance</h2>
+        <p class="insurance__subtitle">Major insurance providers accepted</p>
+        <div class="insurance-cards">
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-1.png" alt="insurance provider">
+            </figure>
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-2.png" alt="insurance provider">
+            </figure>
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-3.png" alt="insurance provider">
+            </figure>
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-4.png" alt="insurance provider">
+            </figure>
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-5.png" alt="insurance provider">
+            </figure>
+            <figure class="insurance-card">
+                <img class="insurance-card__img" src="/assets/medical-logo-6.png" alt="insurance provider">
+            </figure>
+
+        </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer-row1">
+                <div class="footer-sec1">
+                    <h2>Location</h2>
+                    <ul>
+                        <li>
+                            Porto Medical
+                        </li>
+                        <li>
+                            123 Porto Blvd, Suite 100
+                        </li>
+                        <li>
+                            New York, NY
+                        </li>
+                        <li>
+                            Phone : 123-456-7890
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-sec2">
+                    <h2>Opening Hours</h2>
+                    <ul>
+                        <li>
+                            <span class="day"> Mon-Fri</span> : <span>8:30 am to 5:00 pm </span>
+                        </li>
+                        <li>
+                            <span class="day"> Saturday</span> : <span>9:30 am to 1:00 pm </span>
+                        </li>
+                        <li>
+                            <span class="day"> Sunday</span> : <span>Closed </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-sec3">
+                    <h2>Emergency Cases</h2>
+                    <p>(800)123-4567</p>
+                </div>
+                <div class="footer-sec4">
+                    <h2>Social Media</h2>
+                    <div>
+                        <img src="/assets/facebook-logo.png" alt="facebook">
+                        <img src="/assets/twitter-logo.png" alt="twitter">
+                        <img src="/assets/linkedin-logo.png" alt="linkedin">
+                    </div>
+                </div>
+                </div>
+                <div class="footer-row2">
+                    <p>© copyright 2025. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
 </body>
+
+
+
+
+<script>
+
+    function toggleMenu() {
+        document.getElementById('navList').classList.toggle('active');
+    }
+
+</script>
 
 </html>
