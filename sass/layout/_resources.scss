@@ -1,0 +1,18 @@
+.resources {
+    padding-inline: $padding-inline-default;
+    padding-block: $padding-block-default;
+    background-color: $white-200;
+    &__title {
+      @include section-title;
+      margin-bottom: 0.5rem;
+    }
+    &__subtitle {
+      @include section-subtitle;
+      margin-bottom: 1.5rem;
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}  

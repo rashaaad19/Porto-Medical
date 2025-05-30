@@ -1,0 +1,40 @@
+.resources-cards {
+  display: flex;
+  gap: 24px;
+  .resources-item {
+    width: 33%;
+    background-color: $white-100;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+  
+
+    &__img {
+      width: 100%;
+    }
+    & div {
+      padding-block: 16px;
+      padding-inline: 10px  ;
+      
+      .resources-item__header{
+        @include section-title;
+        font-size: $fs-section-subtitle;
+      }
+      .resources-item__text {
+        @include section-description;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .resources-cards {
+    flex-direction: column;
+    .resources-item {
+      width: 100%;
+    }
+  }
+}

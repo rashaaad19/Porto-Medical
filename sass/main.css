@@ -96,7 +96,7 @@
   background-color: #F7F7F7;
 }
 .departments__title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 0.2rem;
   width: -moz-fit-content;
@@ -105,7 +105,7 @@
 }
 .departments__subtitle {
   color: #777777;
-  font-size: 19.2px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 1.125rem;
   width: -moz-fit-content;
@@ -133,7 +133,7 @@
   padding-inline: 112px;
 }
 .doctors__title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 0.2rem;
   width: -moz-fit-content;
@@ -147,7 +147,7 @@
 }
 .doctors-caption__subtitle {
   color: #777777;
-  font-size: 19.2px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 1.125rem;
   width: -moz-fit-content;
@@ -162,6 +162,34 @@
 }
 .doctors .btn-ctrl button img {
   width: 25px;
+}
+
+.resources {
+  padding-inline: 112px;
+  padding-block: 50px;
+  background-color: #F7F7F7;
+}
+.resources__title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+.resources__subtitle {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1.125rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+.resources .btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -374,7 +402,7 @@
   width: fit-content;
 }
 .about-us-caption__title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 0.2rem;
   width: -moz-fit-content;
@@ -382,7 +410,7 @@
 }
 .about-us-caption__subtitle {
   color: #777777;
-  font-size: 19.2px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 1.125rem;
   width: -moz-fit-content;
@@ -468,12 +496,12 @@
   margin: 0;
 }
 .doctors__cards .doctors__card figcaption .doctors__card__text h4 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 0.2rem;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 19.2px;
+  font-size: 16px;
 }
 .doctors__cards .doctors__card figcaption button {
   background-color: transparent;
@@ -490,6 +518,52 @@
 }
 @media (max-width: 650px) {
   .doctors__cards .doctors__card {
+    width: 100%;
+  }
+}
+
+.resources-cards {
+  display: flex;
+  gap: 24px;
+}
+.resources-cards .resources-item {
+  width: 33%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.resources-cards .resources-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.resources-cards .resources-item__img {
+  width: 100%;
+}
+.resources-cards .resources-item div {
+  padding-block: 16px;
+  padding-inline: 10px;
+}
+.resources-cards .resources-item div .resources-item__header {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+}
+.resources-cards .resources-item div .resources-item__text {
+  color: #777777;
+  margin-bottom: 1.125rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .resources-cards {
+    flex-direction: column;
+  }
+  .resources-cards .resources-item {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
